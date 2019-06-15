@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/relLayout1">
+
+                <!-- toolbar -->
+                <include layout="@layout/snippet_top_post_toolbar"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relLayout1"
+                android:id="@+id/relLayout2"
+                android:weightSum="100"
+                android:orientation="vertical"
+                android:background="@drawable/grey_border_bottom">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_weight="30"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:id="@+id/ic_magnify"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/ic_magnify"/>
+
+                        <AutoCompleteTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/ic_magnify"
+                            android:layout_centerVertical="true"
+                            android:textSize="15sp"
+                            android:textColor="#000"
+                            android:id="@+id/input_search"
+                            android:background="@null"
+                            android:hint="Enter Address, City or Zip Code"
+                            android:imeOptions="actionSearch"/>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/photocaption"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@null"
+                        android:hint="Write a description..." />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageShare"
+                    android:layout_width="276dp"
+                    android:layout_height="294dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_weight="70"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

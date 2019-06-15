@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ndroid="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/grey_rounded_button">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profilelayout" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="0.5dp"
+                android:id="@+id/profileimage"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/profileimage"
+                android:paddingLeft="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:fontFamily="@font/finger_paint"
+                android:id="@id/username" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profilelayout"
+            android:id="@+id/trip">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tripinfo1"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="25dp">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_description"
+                    android:id="@+id/tripnameicon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trip: "
+                    android:id="@+id/tripnametext"
+                    android:layout_toRightOf="@+id/tripnameicon"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/finger_paint" />
+
+                <TextView
+                    android:id="@+id/tripName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:layout_toRightOf="@+id/tripnametext"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/finger_paint" />
+
+                <TextView
+                    android:id="@+id/tripdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:layout_alignParentRight="true"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/finger_paint" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tripinfo1"
+                android:id="@+id/tripinfo2"
+                android:paddingTop="5dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="25dp"
+                android:background="@drawable/white_grey_border_bottom">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_place"
+                    android:id="@+id/placeicon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="City: "
+                    android:layout_toRightOf="@+id/placeicon"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/placenametext"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/finger_paint" />
+
+                <TextView
+                    android:id="@+id/cityName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/placenametext"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/finger_paint" />
+
+                <ImageButton
+                    android:id="@+id/btn_trip_detail"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/White"
+                    android:src="@drawable/ic_ellipses" />
+            </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/trip">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerviewtriplist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

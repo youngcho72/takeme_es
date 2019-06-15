@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/place_name_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        app:srcCompat="@drawable/ic_place" />
+
+    <TextView
+        android:id="@+id/place_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/place_name_icon"
+        android:layout_marginLeft="10dp"
+        android:text="place name"
+        android:textStyle="bold"
+        app:fontFamily="@font/finger_paint"
+        android:textColor="@color/blue2"
+        android:textSize="25sp"/>
+
+    <ImageView
+        android:id="@+id/edit_place"
+        android:layout_width="32dp"
+        android:layout_height="26dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/ic_add_start"/>
+
+
+</RelativeLayout>

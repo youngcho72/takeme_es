@@ -1,0 +1,159 @@
+{
+  "project_info": {
+    "project_number": "526856507370",
+    "firebase_url": "https://my-takeme.firebaseio.com",
+    "project_id": "my-takeme",
+    "storage_bucket": "my-takeme.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526856507370:android:efe36bd894db8bdb",
+        "android_client_info": {
+          "package_name": "com.android.mytakeme0505"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526856507370-5ih0aubacme3mnqjgmgfvmkhi3ivd1ia.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.mytakeme0505",
+            "certificate_hash": "a65465e39b4f4478aadd03cd7f93fbb6fb68834d"
+          }
+        },
+        {
+          "client_id": "526856507370-es38af4b2pcrt2fp4kfrjbofqhj74fe6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDCI-UhpEHh924yuxDkjPIcDE5xf9B1H0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "526856507370-es38af4b2pcrt2fp4kfrjbofqhj74fe6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526856507370:android:58d3b949c37a8da9",
+        "android_client_info": {
+          "package_name": "com.android.takeme_0425"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526856507370-bcdjr7dbu4ebhitet9r93uam2eilp40e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.takeme_0425",
+            "certificate_hash": "8a1384038b66f2e41c1de3d90152cb2ea3fbde94"
+          }
+        },
+        {
+          "client_id": "526856507370-es38af4b2pcrt2fp4kfrjbofqhj74fe6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDCI-UhpEHh924yuxDkjPIcDE5xf9B1H0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "526856507370-es38af4b2pcrt2fp4kfrjbofqhj74fe6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526856507370:android:ac3873fa7500d4d0",
+        "android_client_info": {
+          "package_name": "com.android.takeme_es"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526856507370-3vi1pg08goohj2mdt8147afn2bc4fmj1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.takeme_es",
+            "certificate_hash": "a65465e39b4f4478aadd03cd7f93fbb6fb68834d"
+          }
+        },
+        {
+          "client_id": "526856507370-es38af4b2pcrt2fp4kfrjbofqhj74fe6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDCI-UhpEHh924yuxDkjPIcDE5xf9B1H0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "526856507370-es38af4b2pcrt2fp4kfrjbofqhj74fe6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526856507370:android:dea018e1300b7b5c",
+        "android_client_info": {
+          "package_name": "com.example.mytakeme_0526"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "526856507370-hq8i1rv64erbn5i7upqp4aunkv1rl0ph.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mytakeme_0526",
+            "certificate_hash": "434b950f6b3c643bd8110d373ddd0b287cb20d19"
+          }
+        },
+        {
+          "client_id": "526856507370-es38af4b2pcrt2fp4kfrjbofqhj74fe6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDCI-UhpEHh924yuxDkjPIcDE5xf9B1H0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "526856507370-es38af4b2pcrt2fp4kfrjbofqhj74fe6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

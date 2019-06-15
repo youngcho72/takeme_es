@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="169dp"
+            android:layout_marginEnd="53dp"
+            android:layout_marginRight="53dp"
+            app:srcCompat="@drawable/takeme" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="122dp"
+            android:layout_height="138dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="145dp"
+            android:layout_marginLeft="145dp"
+            android:layout_marginTop="271dp"
+            android:layout_marginEnd="144dp"
+            android:layout_marginRight="144dp"
+            android:src="@drawable/ic_add_start"/>
+
+        <include layout="@layout/bottom_navigation" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

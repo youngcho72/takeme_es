@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="110dp"
+            android:id="@+id/recycler_view_layout">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerviewlocation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:id="@+id/trip_view_layout"
+            android:layout_below="@+id/recyclerviewlocation"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/white_grey_border_top">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <Button
+                    android:id="@+id/add_location"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="51dp"
+                    android:layout_marginRight="51dp"
+                    android:text="Add Location" />
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="109dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="91dp"
+                    android:layout_marginRight="91dp"
+                    android:layout_toStartOf="@+id/add_location"
+                    android:layout_toLeftOf="@+id/add_location"
+                    android:text="Submit" />
+
+            </RelativeLayout>
+
+            <include layout="@layout/bottom_navigation"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

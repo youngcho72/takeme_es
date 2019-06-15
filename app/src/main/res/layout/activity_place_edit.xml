@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/relLayout1">
+
+                <android.support.design.widget.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/white_grey_border_bottom"
+                    >
+
+                    <android.support.v7.widget.Toolbar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/profileToolBar">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cancel"
+                                android:layout_marginRight="15dp"
+                                android:textSize="20sp"
+                                app:fontFamily="casual"
+                                android:textColor="@color/link_blue"
+                                android:background="@drawable/white_rounded_button"
+                                android:layout_centerVertical="true"
+                                android:id="@+id/ivBackArrow"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Place"
+                                android:layout_centerInParent="true"
+                                android:layout_marginRight="15dp"
+                                android:textSize="20sp"
+                                app:fontFamily="casual"
+                                android:textColor="@color/link_blue"
+                                android:background="@drawable/white_rounded_button"
+                                android:layout_centerVertical="true"
+                                android:id="@+id/placename"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Save"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="15dp"
+                                android:textSize="20sp"
+                                app:fontFamily="casual"
+                                android:textColor="@color/link_blue"
+                                android:background="@drawable/white_rounded_button"
+                                android:layout_centerVertical="true"
+                                android:id="@+id/placesave"
+                                />
+                        </RelativeLayout>
+
+
+                    </android.support.v7.widget.Toolbar>
+
+                </android.support.design.widget.AppBarLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relLayout1"
+                android:id="@+id/relLayout2"
+                android:background="@drawable/grey_border_bottom">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/photo_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relLayout2"
+                android:id="@+id/relLayout3"
+                android:background="@drawable/grey_border_bottom">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Comment..."
+                    android:textColor="@color/black"
+                    android:id="@+id/comment"
+                    app:fontFamily="@font/finger_paint"
+                    android:textSize="25sp" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_below="@+id/comment">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textNoSuggestions"
+                    android:hint="Describe this place"
+                    app:fontFamily="@font/finger_paint"
+                    android:id="@+id/input_caption_place"/>
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relLayout3"
+                android:id="@+id/relLayout4"
+                android:background="@drawable/grey_border_bottom">
+
+                <ImageView
+                    android:id="@+id/city_name_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="25dp"
+                    app:srcCompat="@drawable/ic_place" />
+
+                <TextView
+                    android:id="@+id/placedetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Place..."
+                    android:layout_toRightOf="@+id/city_name_icon"
+                    app:fontFamily="@font/finger_paint"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_below="@+id/placedetail"
+                    app:fontFamily="casual"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    android:id="@+id/input_place_addr"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relLayout4"
+                android:id="@+id/relLayout5"
+                android:background="@drawable/grey_border_bottom">
+
+                <TextView
+                    android:id="@+id/ratingtextview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Rating"
+                    app:fontFamily="@font/finger_paint"
+                    android:textColor="@color/black"
+                    android:textSize="25sp" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator = "false"
+                    android:numStars="5"
+                    android:max = "5"
+                    android:rating="1"
+                    android:stepSize="1"
+                    android:layout_below="@+id/ratingtextview" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
